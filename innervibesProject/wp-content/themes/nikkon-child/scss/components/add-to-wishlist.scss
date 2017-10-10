@@ -1,0 +1,43 @@
+ul.products {
+    li.product {
+        width: 23%;
+        margin: 0 5.4% 0;
+        padding-bottom: 0;
+        box-shadow: none;
+        border: 2px solid #ececec;
+        
+        .tinvwl_add_to_wishlist_button {
+            font-family: $secondary-font;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #cccccc !important;
+            background-color: transparent;
+            border: 0;
+            margin: 0;
+            padding: 20px 0;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        
+        .add-basket-line {
+            position: relative;
+            width: 100%;
+            border: 0.5px solid #ececec;
+            margin: 25px 0 15px;
+
+            a {
+                &.add_to_cart_button,
+                &.ajax_add_to_cart:not(.add_to_cart_button),
+                &.out-of-stock {
+                    position: absolute;
+                    top: -24%;
+                    left: 50px;
+                    @include prefix(transform, translateX(-50%), webkit moz ms o);
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

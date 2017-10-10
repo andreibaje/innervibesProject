@@ -1,0 +1,182 @@
+.woocommerce-cart {
+    .woocommerce-cart-form,
+    .woocommerce .cart-collaterals,
+    .woocommerce-page .cart-collaterals {
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .woocommerce-cart-form {
+        width: 72%;
+    }
+
+    .woocommerce,
+    .woocommerce-page {
+        .cart-collaterals {
+            width: 27%;
+            padding-bottom: 30%;
+
+            .cart_totals {
+                width: 100% !important;
+                padding: 0 9%;
+
+                table {
+                    border-top: 2px solid #dddddd;
+                    border-bottom: 1px solid #dddddd;
+                }
+
+                th, td {
+                    border: none !important;
+                    padding: 14px 0 !important;
+                    width: 50% !important;
+                    line-height: 1em !important;
+                }
+
+                tr.shipping{
+                    border-bottom: 1px solid #e6e6e6 !important;
+                }
+
+                th {
+                    font-weight: normal;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        table.shop_table td {
+            padding: 30px 0 !important;
+            border: none;
+            border-bottom: 1px solid #dedede;
+            vertical-align: middle;
+        }
+
+        table.cart,
+        #content table.cart {
+            img {
+                width: 100%;
+                height: 75px !important;
+            }
+        }
+    }
+    
+    .woocommerce {
+        table.shop_table {
+            border: none;
+            color: #595959;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            color: #595959;
+            padding-bottom: 13px;
+        }
+
+        .wc-proceed-to-checkout a {
+            width: 100%;
+            background-color: $primary-color;
+            font-size: 16px;
+            margin: 0;
+            padding: 19px 0;
+
+            &:hover {
+                color: $primary-color !important;
+                background-color: #ffffff !important;
+            }
+        }
+    }
+
+    table.cart {
+        .product-thumbnail {
+            width: 8.5%;
+            height: 75px;
+        }
+
+        .product-name {
+            width: 46.5%;
+            font-size: 16px;
+
+            a {
+                color: #595959;
+                padding-left: 15px;
+            }
+        }
+
+        .product-subtotal,
+        .product-price {
+            width: 15%;
+            text-align: center;
+        }
+
+        .product-subtotal {
+            font-weight: bold;
+        }
+        
+        .product-quantity,
+        .product-remove {
+            width: 5%;
+            text-align: center;
+        }
+
+        .product-remove {
+            a {
+                color: #595959 !important;
+
+                &:hover {
+                    background-color: transparent !important;
+                    color: $primary-color !important;
+                }
+            }
+        }
+
+        td.actions {
+            text-align: left;
+
+            .coupon-info {
+                float: left;
+                width: 35%;
+                margin-right: 50px;
+            }
+
+            h2 {
+                text-align: left;
+                border-bottom: 1px solid #dedede;
+            }
+
+            .coupon {
+                .input-text {
+                    border-radius: 0;
+                    border: 1px solid #dedede;
+                    width: 31% !important;
+                    padding: 12px 6px 12px 10px !important;
+                    text-transform: uppercase;
+                }
+
+                input[type='submit'] {
+                    width: auto;
+                    background: $primary-color;
+                    padding: 12px 27px;
+                    border-radius: 0;
+
+                    &:hover {
+                        background-color: #ffffff;
+                        color: $primary-color !important
+                    }
+                }
+            } 
+        }
+    }
+
+    .redirect-to-shop {
+        text-align: center;
+        margin-bottom: 50px;
+
+        a {
+            color: #858484 !important;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+    }
+}

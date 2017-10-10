@@ -1,0 +1,41 @@
+/* Admin settings page styles. */
+
+.pro {
+	background: #f5d53e;
+	margin: 0 0 0 0;
+	padding: 1px 3px;
+	font-weight: bold;
+	border-radius: 2px;
+	font-size: 10px;
+	color: #151515;
+}
+
+.pro a {
+	color: #151515;
+	text-decoration: none;
+}
+
+.shortcode-attributes {
+	list-style-type:disc;
+}
+
+.shortcode-attributes li {
+	margin-left: 25px;
+}
+
+.ss-box {
+	background:#fff;
+	border: 1px dashed #ccc;
+	font-size: 13px;
+	margin: 20px 0 10px 0;
+	padding: 10px 10px 5px 10px;
+}
+
+#shortcodes-wrap, #attributes-wrap {
+	display: none;
+}
+
+.social-link {
+	display: inline-block;
+	line-height: 0;
+}

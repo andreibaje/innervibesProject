@@ -1,0 +1,42 @@
+.site-footer {
+    .widget {
+        color: #e1e1e1;
+    }
+
+    .widgettitle,
+    .widget-title {
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 3px;
+        color: #e1e1e1;
+        border: 0;
+        padding-bottom: 30px;
+        margin: 0;
+    }
+
+    .site-footer-widgets {
+        .widget {
+            ul li {
+                margin: 0 !important;
+                padding-bottom: 20px;
+                font-weight: bold;
+
+                a:hover {
+                    color: $primary-color;
+                }
+            }
+
+            &:last-of-type {
+                ul li {
+                    display: inline-block;
+                    padding-right: 18px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .site-footer-bottom-bar {
+        display: none;
+    }
+}

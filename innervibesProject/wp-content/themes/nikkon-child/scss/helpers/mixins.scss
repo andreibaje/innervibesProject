@@ -1,0 +1,16 @@
+@mixin prefix($property, $value, $vendors: webkit moz ms o) {
+	@if $vendors {
+		@each $vendor in $vendors {
+			#{"-" + $vendor + "-" + $property}: #{$value};
+		}
+	}
+	#{$property}: #{$value};
+}
+
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
